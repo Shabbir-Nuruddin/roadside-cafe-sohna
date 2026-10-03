@@ -1,0 +1,102 @@
+import "@fontsource/bebas-neue/400.css";
+import type { Site } from "./lib";
+
+export const SITE: Site = {
+  name: "The RoadSide Cafe",
+  sub: { en: "Cafe & grill · Badshahpur–Sohna Road", hi: "कैफ़े और ग्रिल · बादशाहपुर–सोहना रोड" },
+  banner: { en: "Indoor tables or open-sky seating: tell us which when you book", hi: "अंदर की टेबल या खुले आसमान के नीचे: बुकिंग के समय बताएं" },
+  phone: "919992839047",
+  phoneDisplay: "+91 99928 39047",
+  lat: 28.2668943,
+  lon: 77.0676236,
+  hours: [[11, 23], [11, 23], [11, 23], [11, 23], [11, 23], [11, 23], [11, 23]],
+  theme: {
+    dark: true,
+    bg: "#0d0d0e",
+    bg2: "#161618",
+    panel: "#1c1c1f",
+    ink: "#f5f4ef",
+    ink2: "#c6c5bf",
+    ink3: "#88877f",
+    line: "#2e2e31",
+    accent: "#ffd23f",
+    onAccent: "#221a00",
+    display: "Bebas Neue",
+    weight: 400,
+    upper: true,
+  },
+  scene: "road",
+  align: "right",
+  hero: {
+    title: [
+      { en: "Pull over.", hi: "गाड़ी रोकिए।" },
+      { en: "The grill is on.", hi: "ग्रिल चालू है।" },
+    ],
+    proof: {
+      en: "4.1 on Google from 218 reviews. Malai tikka, crispy mushroom and open-sky tables on the service road towards Sohna.",
+      hi: "गूगल पर 218 रिव्यू से 4.1। मलाई टिक्का, क्रिस्पी मशरूम और खुले आसमान के नीचे टेबल, सोहना की तरफ़ सर्विस रोड पर।",
+    },
+    fallback: "/img/p7.jpg",
+  },
+  marquee: ["Chicken Malai Tikka", "Crispy Mushroom", "Dal Bukhara", "Open-sky seating", "Mocktails", "Pizza"],
+  dishes: {
+    title: { en: "Order these first", hi: "पहले ये मंगाइए" },
+    body: { en: "Recommendations from Google reviewers, quoted exactly.", hi: "गूगल रिव्यू करने वालों की सलाह, ज्यों की त्यों।" },
+    layout: "list",
+    items: [
+      { name: { en: "Chicken Malai Tikka", hi: "चिकन मलाई टिक्का" }, quote: "Chicken mslai tikka was fab. Must try it.", img: "/img/p14.jpg" },
+      { name: { en: "Crispy Mushroom & Dal Bukhara", hi: "क्रिस्पी मशरूम और दाल बुख़ारा" }, quote: "Crispy mushroom, Dal bukhara you must try. It is located between Sohna- - Gurgaon stretch." },
+      { name: { en: "Fair prices", hi: "सही दाम" }, quote: "Friendly staff,and reasonable prices of all item" },
+    ],
+  },
+  gallery: {
+    title: { en: "Yes, the floor is a road", hi: "हां, फ़र्श पर सड़क बनी है" },
+    layout: "strip",
+    photos: [
+      { src: "/img/p7.jpg", alt: "Road-themed floor with yellow arrows" },
+      { src: "/img/p1.jpg", alt: "Cafe interior" },
+      { src: "/img/p5.jpg", alt: "Seating area" },
+      { src: "/img/p2.jpg", alt: "Drinks" },
+      { src: "/img/p6.jpg", alt: "Dining area" },
+      { src: "/img/p10.jpg", alt: "Pizza" },
+      { src: "/img/p11.jpg", alt: "Interior seating" },
+      { src: "/img/p12.jpg", alt: "Drinks on the table" },
+    ],
+  },
+  feature: {
+    kind: "stopover",
+    title: { en: "Minutes from campus", hi: "कैंपस से कुछ ही मिनट" },
+    body: { en: "Right on the Sohna stretch, close to the colleges and towns around it.", hi: "सोहना रोड पर, आसपास के कॉलेज और कस्बों के पास।" },
+    quote: "The one and only cafe near kr mangalam university and gd goinka university which has a good ambience…",
+    places: [
+      { label: { en: "G D Goenka University", hi: "जी डी गोयनका यूनिवर्सिटी" }, lat: 28.2641433, lon: 77.0648412 },
+      { label: { en: "GD Goenka Signature School", hi: "जीडी गोयनका सिग्नेचर स्कूल" }, lat: 28.2684941, lon: 77.0689876 },
+      { label: { en: "Sohna town", hi: "सोहना शहर" }, lat: 28.2459908, lon: 77.0670992 },
+      { label: { en: "Bhondsi", hi: "भोंडसी" }, lat: 28.3504798, lon: 77.0618737 },
+      { label: { en: "Badshahpur", hi: "बादशाहपुर" }, lat: 28.3932757, lon: 77.0484201 },
+    ],
+  },
+  reviews: {
+    title: { en: "Inside, outside, your call", hi: "अंदर या बाहर, आपकी मर्ज़ी" },
+    rating: 4.1,
+    dist: [122, 40, 29, 11, 16],
+    quotes: [
+      { quote: "There are multiple options for where you want to sit and enjoy your food, under the clear sky or inside dining.", stars: 5 },
+      { quote: "We usually there for parties. When we are free in college🎓", stars: 5 },
+      { quote: "Food and service was excellent with decent price..", stars: 5 },
+      { quote: "the different space for hookha bar and non hookha outside sitting is also provided their", stars: 4 },
+    ],
+  },
+  visit: {
+    title: { en: "On the service road", hi: "सर्विस रोड पर" },
+    img: "/img/p4.jpg",
+    alt: "Brick exterior of The RoadSide Cafe",
+    address: { en: "Badshahpur–Sohna Road, Sohna Rural, Gurugram", hi: "बादशाहपुर–सोहना रोड, सोहना ग्रामीण, गुरुग्राम" },
+    note: { en: "A reviewer’s directions: “Its on the left side heading towards the sohna on the service road”", hi: "एक रिव्यू के मुताबिक: सोहना की ओर जाते हुए सर्विस रोड पर बाईं तरफ़।" },
+  },
+  waHello: {
+    en: "Hi RoadSide Cafe, I'd like to book a table. Inside / open-sky: , date: , people: ",
+    hi: "नमस्ते रोडसाइड कैफ़े, मुझे टेबल बुक करनी है। अंदर / खुले में: , तारीख़: , लोग: ",
+  },
+  order: ["dishes", "feature", "gallery", "reviews", "visit"],
+};
