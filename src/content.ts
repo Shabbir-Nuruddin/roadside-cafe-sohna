@@ -25,7 +25,7 @@ export const SITE: Site = {
     weight: 400,
     upper: true,
   },
-  scene: "road",
+  scene: "pour",
   align: "right",
   hero: {
     title: [
@@ -94,9 +94,32 @@ export const SITE: Site = {
     address: { en: "Badshahpur–Sohna Road, Sohna Rural, Gurugram", hi: "बादशाहपुर–सोहना रोड, सोहना ग्रामीण, गुरुग्राम" },
     note: { en: "A reviewer’s directions: “Its on the left side heading towards the sohna on the service road”", hi: "एक रिव्यू के मुताबिक: सोहना की ओर जाते हुए सर्विस रोड पर बाईं तरफ़।" },
   },
+  pour: { from: "jug", into: "glass", liquid: "#e2703a", foam: "#f5b48a", thick: 1, ice: true, lime: true },
+  story: [
+    { kicker: { en: "The sky", hi: "आसमान" }, title: { en: "Inside, or under the open sky.", hi: "अंदर, या खुले आसमान के नीचे।" }, quote: "There are multiple options for where you want to sit and enjoy your food, under the clear sky or inside dining." },
+    { kicker: { en: "The plate", hi: "प्लेट" }, title: { en: "Malai tikka, by popular demand.", hi: "मलाई टिक्का, सबकी पसंद।" }, quote: "Chicken mslai tikka was fab. Must try it." },
+    { kicker: { en: "The spot", hi: "ठिकाना" }, title: { en: "The campus hangout.", hi: "कैंपस का अड्डा।" }, quote: "The one and only cafe near kr mangalam university and gd goinka university which has a good ambience…" },
+  ],
+  build: {
+    title: { en: "Plan your visit in a few taps", hi: "कुछ टैप में अपनी विज़िट प्लान करें" },
+    body: { en: "Pick where you want to sit, what to eat, how many and when. It lands on WhatsApp exactly as you see it.", hi: "कहां बैठना है, क्या खाना है, कितने लोग और कब, चुनें। मैसेज व्हाट्सऐप पर ठीक ऐसे ही पहुंचेगा।" },
+    pick: { label: { en: "Seating", hi: "बैठक" }, options: [
+      { name: { en: "Inside", hi: "अंदर" } },
+      { name: { en: "Open sky", hi: "खुला आसमान" } },
+      { name: { en: "Hookah area", hi: "हुक्का एरिया" }, note: { en: "Separate from non-hookah seating", hi: "नॉन-हुक्का बैठक से अलग" } },
+    ] },
+    items: [
+      { en: "Chicken Malai Tikka", hi: "चिकन मलाई टिक्का" },
+      { en: "Crispy Mushroom", hi: "क्रिस्पी मशरूम" },
+      { en: "Dal Bukhara", hi: "दाल बुख़ारा" },
+    ],
+    people: true,
+    when: true,
+    hello: { en: "Hi RoadSide Cafe, I'd like to book:", hi: "नमस्ते रोडसाइड कैफ़े, मुझे बुक करना है:" },
+  },
   waHello: {
     en: "Hi RoadSide Cafe, I'd like to book a table. Inside / open-sky: , date: , people: ",
     hi: "नमस्ते रोडसाइड कैफ़े, मुझे टेबल बुक करनी है। अंदर / खुले में: , तारीख़: , लोग: ",
   },
-  order: ["dishes", "feature", "gallery", "reviews", "visit"],
+  order: ["build", "dishes", "feature", "gallery", "reviews", "visit"],
 };
